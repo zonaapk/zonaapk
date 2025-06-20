@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Zona APK</title>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40jmTyLcaKoaBapXEvsxDfTGxfzSDcPdng+/oLYSYPkFVyOOfYwxz7FwLg+GwJxSSBfCjW6WKtFw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="/images/logo.png" alt="Zona APK Logo" height="40"> ZONA APK
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/categorias.html">Categorías</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/juegos.html">Juegos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/herramientas.html">Herramientas</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/contacto.html">Contacto <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 custom-search-form">
+                        <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Buscar APK..." aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+        <h1 class="text-center mb-4">Contáctanos</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <p class="text-center lead">¿Tienes alguna pregunta, sugerencia o necesitas ayuda? ¡No dudes en contactarnos a través del siguiente formulario!</p>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Tu Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="email" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" class="form-control" id="asunto" placeholder="Asunto del Mensaje" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+                </form>
+                <div class="text-center mt-4">
+                    <p>También puedes enviarnos un correo electrónico directamente a: <a href="mailto:info@zonaapk.com">info@zonaapk.com</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p>&copy; 2025 ZONA APK. Todos los derechos reservados.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="/politica-privacidad.html" class="text-white">Política de Privacidad</a></li>
+                <li class="list-inline-item"><a href="/dmca.html" class="text-white">DMCA</a></li>
+                <li class="list-inline-item"><a href="/terminos-uso.html" class="text-white">Términos de Uso</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="/assets/JS/jquery.min.js"></script>
+    <script src="/assets/JS/bootstrap.bundle.min.js"></script>
+    <script src="/assets/JS/data.js"></script>
+    <script src="/assets/JS/main.js"></script>
+
+</body>
+</html>
