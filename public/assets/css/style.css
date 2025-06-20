@@ -1,0 +1,194 @@
+/* Google Fonts: Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* --- Variables de Color y Estilos Globales --- */
+:root {
+    --primary-color: #28a745;
+    --primary-hover: #218838;
+    --dark-color: #1c1c1e;
+    --light-gray: #f4f5f7;
+    --text-color: #333;
+    --text-muted: #6c757d;
+    --border-color: #dee2e6;
+    --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    --card-hover-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* --- Header y Búsqueda --- */
+.navbar {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--dark-color) !important;
+}
+
+.navbar-brand img {
+    margin-right: 0.5rem;
+}
+
+.section-padding {
+    padding: 60px 0;
+}
+
+.section-title {
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* --- Estilos para el Formulario de Búsqueda en el Navbar --- */
+.custom-search-form {
+    display: flex; /* Usar flexbox para alinear el input y el botón */
+    align-items: center; /* Centrar verticalmente los elementos */
+}
+
+.custom-search-form .form-control {
+    margin-right: 0 !important; /* Elimina el margen derecho que separa input y botón */
+    border-top-right-radius: 0; /* Suaviza el borde si el botón está pegado */
+    border-bottom-right-radius: 0;
+}
+
+.custom-search-form .btn {
+    border-top-left-radius: 0; /* Suaviza el borde si el botón está pegado */
+    border-bottom-left-radius: 0;
+}
+
+/* --- Tarjetas de APK --- */
+.apk-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    display: flex; 
+    flex-direction: column; 
+    overflow: hidden; 
+    height: 100%; 
+    
+    width: 100%; 
+    max-width: 250px; /* Mantener este valor, ya que funcionó bien */
+    margin: 0 auto;   
+}
+
+.apk-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-hover-shadow);
+}
+
+.card-img-top-container {
+    text-align: center;
+    padding-top: 20px; 
+}
+
+.card-img-top {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 25px; 
+    margin: 0 auto; 
+    display: block; 
+}
+
+.card-body {
+    padding: 1.25rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+    
+    height: 130px; /* Mantener este valor, ya que funcionó bien para la altura */
+    overflow: hidden; 
+    position: relative; 
+    justify-content: space-between; 
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    max-width: 100%; 
+    line-height: 1.3; 
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    max-width: 100%; 
+}
+
+.apk-info {
+    margin-top: auto; 
+    margin-bottom: 0.5rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+}
+
+.apk-info .badge {
+    padding: 0.5em 0.75em; 
+    font-size: 0.85rem;
+}
+
+
+/* --- Botones --- */
+.btn-primary, .btn-outline-primary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 500;
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    color: white;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-card-bottom { 
+    margin-top: auto; 
+}
+
+
+/* --- Footer --- */
+footer {
+    background-color: var(--dark-color) !important;
+    padding: 2rem 0;
+}
