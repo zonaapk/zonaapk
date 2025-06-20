@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return 'Discord Inc.'; 
         }
 
-        const maxLengthDeveloper = 20; 
+        const maxLengthDeveloper = 20; // Límite de caracteres para el desarrollador
         if (originalDeveloper.length > maxLengthDeveloper) {
             return originalDeveloper.substring(0, maxLengthDeveloper) + '...';
         }
