@@ -1,0 +1,83 @@
+/*
+--- INICIO: ESTILOS MEJORADOS PARA MODO OSCURO (Versión 2) ---
+*/
+:root.dark-mode {
+    --light-gray: #121212;
+    --text-color: #e0e0e0;
+    --text-muted: #888;
+    --border-color: #3a3a3a;
+    --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    --card-hover-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    --background-color: #1e1e1e; /* Fondo para navbar, jumbotron */
+    --card-background: #2a2a2a;
+}
+
+body.dark-mode, :root.dark-mode {
+    background-color: var(--light-gray);
+    color: var(--text-color);
+}
+
+/* Transiciones suaves para una mejor experiencia */
+body, .navbar, .card, .form-control {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* --- Elementos específicos en Modo Oscuro --- */
+
+/* Navbar, Jumbotron y Footer */
+:root.dark-mode .navbar,
+:root.dark-mode .jumbotron {
+    background-color: var(--background-color) !important;
+    border-color: var(--border-color);
+}
+:root.dark-mode .nav-link { color: #e0e0e0; }
+:root.dark-mode .nav-link:hover { color: #ffffff; }
+:root.dark-mode footer.bg-dark { background-color: #000 !important; }
+
+/* Tarjetas (Regla mejorada para cubrir todos los textos) */
+:root.dark-mode .card,
+:root.dark-mode .card .card-body,
+:root.dark-mode .card h1,
+:root.dark-mode .card h2,
+:root.dark-mode .card h5,
+:root.dark-mode .card p,
+:root.dark-mode .card li,
+:root.dark-mode .card strong,
+:root.dark-mode .card label {
+    color: var(--text-color) !important;
+}
+:root.dark-mode .card {
+    background-color: var(--card-background) !important;
+    border-color: var(--border-color);
+}
+:root.dark-mode .card .text-muted {
+    color: #a0a0a0 !important;
+}
+:root.dark-mode .card a:not(.btn) { /* Enlaces dentro de las tarjetas */
+    color: #6cb5f5;
+}
+
+
+/* Campo de Búsqueda y Formularios */
+:root.dark-mode .form-control {
+    background-color: #3a3a3a;
+    color: #f0f0f0;
+    border-color: #555;
+}
+:root.dark-mode .form-control::placeholder {
+    color: #888;
+}
+:root.dark-mode .form-control:focus {
+    background-color: #4a4a4a;
+    border-color: #80bdff;
+    color: #f0f0f0;
+}
+
+
+/* Títulos generales de la página */
+:root.dark-mode .display-4,
+:root.dark-mode .section-title,
+:root.dark-mode h1 {
+    color: #f5f5f5;
+}
+/* --- FIN: ESTILOS MEJORADOS PARA MODO OSCURO --- */
